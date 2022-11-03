@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Stock ACSA</title>
+    <link rel="stylesheet" href="style.css">
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="container-fluid">
+    <head>
+        <div class="container">
+            <h1 class="display-6">Consulta de Stock</h1>
+
+
+        </div>
+    </head>
+
+    <main>
+        <!-- formulario  -->
+        <div class="container general">
+            <div class="row">
+                
+                
+                <div class="col-4 col-md-3 col-lg-2 mt-2  ">
+                    <label class="label_acsa" for="">Codigo:</label>
+                    <input type="number" class="form-control"> 
+                </div>
+                <!-- botones  -->
+                <div class="col-8 col-md-6 col-lg-3 mt-2 gap-1 d-flex align-items-end">
+                
+                <button type="button" class="btn btn-primary col"><i class="bi bi-search"></i>  Buscar </button>
+                <button type="button" class="btn btn-primary col" data-bs-toggle="modal" data-bs-target="#ayudaModal" > <i class="bi bi-question-circle"></i> Ayuda</button>
+                  
+                </div> 
+                
+                
+
+            </div>
+
+    
+
+
+        </div>
+        <!-- Fin de formulario  -->
+
+
+  
+  <!-- Modal  llamado por el boton-->
+  <div class="modal fade fs-ayuda" id="ayudaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Ayuda de Busqueda</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+               
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    
+                    <div class="col-6 col-md-6 col-lg-10   ">
+                        <label class="label_acsa pb-3" for="">Producto, Código o Descripción:</label>
+                        <input type="text" class="form-control"> 
+                    </div>
+                    <!-- botones  -->
+                    <div class="col-4 col-md-6 col-lg-2 mt-2 gap-1 d-flex align-items-end">
+                    
+                        <button type="button" class="btn btn-primary col"><i class="bi bi-search"></i>  Buscar </button>
+                        </button>
+                      
+                    </div>
+                    <div class="pt-4"> <p>Nota: Se puede usar % para realizar búsquedas     *** ejemplo 1  :  32x12       ***   ejemplo 2  :  cana%32x12 *** ejemplo3 : cana%32x12%dexson</p>
+                    </div>   
+
+
+
+                    <div class="table-responsive fs_acsa ">
+                        <table class="table">
+                            <thead>
+                            <tr class="table-warning">
+                                <th scope="col" class=""><div class="sizeseleccionar"><i class="bi bi-check2-square"></i></div></th>
+                                <th scope="col" class=""><div class="sizeempresa">Empresa</div></th>
+                                <th scope="col" class=""><div class="sizecodigo">Codigo</div></th>
+                                <th scope="col" class=""><div class="sizeunidad">Und</div></th>
+                                <th scope="col" class=""><div class="sizedescripcion">Descripcion</div></th>
+                                
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <td  class=""><div class="sizeseleccionar"><i class="bi bi-check2-square"></i></div></td>
+                                <td  class=""><div class="sizeempresa">Promatisa</div></td>
+                                <td  class=""><div class="sizecodigo">02525</div></td>
+                                <td  class=""><div class="sizeunidad">Und</div></td>
+                                <td  class=""><div class="sizedescripcion">CANDADO DE BLOQUEO DE ALUMINIO A1107 AMERICAN LOCK, ALTURA DE ARCO 3" 5 PINES LLAVE DIFERENTE , SIN</div></td>
+                                
+
+
+                            </tr>   
+                            </tbody>
+
+
+
+                        </table>
+                    </div>
+
+
+    
+                </div>
+    
+        
+    
+    
+            </div>
+            
+
+
+
+
+
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+<!-- JavaScript Bundle with Popper -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+crossorigin="anonymous"
+></script>
+    
+</body>
+</html>
