@@ -3,7 +3,7 @@
 }
 
 .sizeempresa{
-    width: 80px;
+    width: 60px;
 }
 
 .sizeseleccionar{
@@ -22,3 +22,7 @@
     font-size: 12px;
 }
 
+
+.sizeseleccionar i:hover{
+    color:red
+}
